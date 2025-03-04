@@ -13,3 +13,5 @@ In our nondimensionalization of the governing eqautions, we uncover a timescale 
 To solve our governing equations, we initialize our key variables and give them realistic initial and boundary conditions. Please see the "Initial, Boundary Conditions" section of the function for the setup. We then update our mesh in the "Fill Mesh" section of the function.
 
 The wrapper feeds the scenarios into the function, calling different source and sink temperatures and giving desired run times. For each scenario, the wrapper plots and saves the data for each of the key variables as .png and .mat files. The .png files are images of the specifically produced figures in the code while the .mat files save the entire matrices for each key variable produced from solving the governing equations.
+
+We note that a third file `WWCS_wrapper_sim_soln_global.m` has also been uploaded. This file implements a similarity solution that we found and compares our simulations to the similarity solution.
